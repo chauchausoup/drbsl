@@ -40,3 +40,12 @@ label{
   flex-direction: column;
   
 }
+
+
+.box{
+  margin:20px;
+  padding: 30px;
+  background-color: cornsilk;
+  list-style: none;
+  text-align: center;
+}
