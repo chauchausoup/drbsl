@@ -1,0 +1,42 @@
+.link{
+  font-size: 20px;
+  color: blue;
+}
+body{
+  margin: 5vh auto;
+}
+
+.container{
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  
+  
+  border: cornflowerblue 2px solid;
+  width: 60vw;
+  height: 90vh;
+
+}
+
+img{
+  width: 50vh;
+  height: auto;
+}
+label{
+  color: rgb(0,0,0,0.4);
+}
+
+.img-container{
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.body-container{
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  
+}
