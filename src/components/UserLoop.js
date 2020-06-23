@@ -8,12 +8,12 @@ import '../App.css'
 export default class UserLoop extends Component {
       render() {
             return (
-                  <ul >
-                        {data.map(d=>(
-                                    <User key={d.name} userData={d}/>
+                  <div >
+                        {data.map((d,i)=>(
+                                    <User key={i} userData={d}/>
                         ))}
                         
-                  </ul>
+                  </div>
             )
       }
 }
