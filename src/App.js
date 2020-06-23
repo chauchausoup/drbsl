@@ -3,13 +3,13 @@ import './App.css';
 //import About from './components/About';
 //import user  from './data/user';
 //import UserLoop from './components/UserLoop';
-import Update from './components/Update';
+import UpdateHooks from './components/UpdateHooks';
 
 
 function App() {
   return (
     <div >
-      <Update/>
+      <UpdateHooks/>
     </div>
   );
 }
