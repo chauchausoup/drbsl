@@ -6,10 +6,7 @@ const OpenSesame =()=>{
 
       const [input,setInput] = useState('')
 
-      const onTextChange=(e)=>{
-            setInput(e.target.value)
-            
-      }
+     
 
       const onSubmission=()=>{
             if(input===secretKey){
@@ -27,7 +24,10 @@ const OpenSesame =()=>{
                   <input 
                   type="text" 
                   value={input}
-                  onChange={onTextChange}
+                  onChange={(e)=>{
+                        setInput(e.target.value)
+
+                  }}
                   
                   />
 
