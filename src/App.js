@@ -4,13 +4,14 @@ import './App.css';
 //import user  from './data/user';
 //import UserLoop from './components/UserLoop';
 //import UpdateHooks from './components/UpdateHooks';
-import OpenSesame from './components/OpenSesame';
+//import OpenSesame from './components/OpenSesame';
+import Home from './components/IceAndFire'
 
 
 function App() {
   return (
     <div >
-      <OpenSesame/>
+      <Home />    
     </div>
   );
 }

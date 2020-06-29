@@ -3,7 +3,8 @@
   color: blue;
 }
 body{
-  margin: 5vh auto;
+  margin: 0px;
+padding: 0px;
 }
 
 .container{
@@ -49,3 +50,25 @@ label{
   list-style: none;
   text-align: center;
 }
+.book{
+  margin: 20px;
+  background-color: cyan;
+  text-align: center;
+  padding: 20px;
+  width: 25vw;
+  height: 10vh;
+}
+
+.cover{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-basis: content;
+align-content: stretch;
+background-color: darkgray;
+margin:0px;
+min-height: 100vh;
+
+
+}
+
