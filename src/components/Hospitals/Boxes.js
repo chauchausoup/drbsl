@@ -4,7 +4,7 @@ import '/home/krishnadhakal/Desktop/drbsl/src/styles/Boxes.scss'
 function Boxes(){
 return(
           <div className="boxes">
-                    hey
+                    Hospital Boxes
           </div>
 )
 }
