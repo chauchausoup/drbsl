@@ -32,7 +32,7 @@ function Carousel(){
                               }    
                     }, 1000);
                     return () => clearInterval(interval);
-                  }, [x]);
+                  }, [x,num]);
           
 
           return(
