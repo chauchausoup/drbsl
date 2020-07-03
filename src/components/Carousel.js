@@ -30,7 +30,7 @@ function Carousel(){
                                         setX(0)
 
                               }    
-                    }, 1000);
+                    }, 4000);
                     return () => clearInterval(interval);
                   }, [x,num]);
           

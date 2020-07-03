@@ -14,7 +14,8 @@ function App() {
       <NavBar/>
       <Carousel/>
       <Boxes/>
-      <Appointment/>
+     <Appointment/>
+      
       <Handlers/>
       <Footer/>
     </div>

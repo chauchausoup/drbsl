@@ -28,7 +28,6 @@ export default function NavigationBar(){
                                                   </ul>
                                                   <ul id="routes">
                                                             <li onClick={handleClick}>News</li>
-                                                            <li onClick={handleClick}>Files</li>
                                                             <li onClick={handleClick}>Login</li>
                                                   </ul>
                                                   <ul id="socials2">
