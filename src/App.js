@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import NavBar from './components/Navbar/NavigationBar'
-import Carousel from './components/Carousel/Carousel';
-import Boxes from './components/Hospitals/Boxes';
-import Appointment from './components/Appointment/AppoiCalendar'
-import Handlers from './components/Handlers/Handlers';
-import Footer from './components/Footer/Footer'
+import NavBar from './components/NavigationBar'
+import Carousel from './components/Carousel';
+import Boxes from './components/Boxes';
+import Appointment from './components/AppoiCalendar'
+import Handlers from './components/Handlers';
+import Footer from './components/Footer'
 
 
 function App() {

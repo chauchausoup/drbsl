@@ -1,5 +1,5 @@
 import React from 'react';
-import '/home/krishnadhakal/Desktop/drbsl/src/styles/Carousel.scss';
+import '../styles/Carousel.scss';
 import { useState,useEffect } from 'react';
 /* import ImgComp from './ImgComp'
 import i1 from  */

@@ -1,5 +1,6 @@
 import React from 'react';
-import '/home/krishnadhakal/Desktop/drbsl/src/styles/AppoiCalendar.scss'
+import '../styles/AppoiCalendar.scss'
+
 
 function AppoiCalendar(){
 return(

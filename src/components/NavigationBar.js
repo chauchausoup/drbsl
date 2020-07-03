@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import '/home/krishnadhakal/Desktop/drbsl/src/styles/Navbar.scss';
+import '../styles/Navbar.scss';
 
 export default function NavigationBar(){
 

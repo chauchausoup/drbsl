@@ -1,5 +1,5 @@
 import React from 'react';
-import '/home/krishnadhakal/Desktop/drbsl/src/styles/Footer.scss'
+import '../styles/Footer.scss'
 
 function AppoiCalendar(){
 return(
