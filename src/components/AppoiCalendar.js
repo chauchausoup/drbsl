@@ -17,9 +17,6 @@ return(
 
 
 function MultipleForms(){
-
-          
-
           const handleChange = (name,e) =>  {
               e.persist();
                     setState( prevState => (
@@ -32,24 +29,16 @@ function MultipleForms(){
           }
 
           function nextStep(){
-                    console.log(value1);
                     setStep(step+1)
-
           }
 
           function prevStep(){
-                    console.log(value1);
                     setStep(step-1)
-
           }
 
-          
+        const [step,setStep]=useState(1);
 
-           const [step,setStep]=useState(1);
-           
-         
-
-          const [state , setState] = useState({
+        const [state , setState] = useState({
                     name:"krishna",
                     pNo:"977",
                     location:"Pokhara",
@@ -57,14 +46,9 @@ function MultipleForms(){
                     history:"xyz"
                 })
                 
-               
+        const value1={...state};
 
-          const value1={...state};
-
-
-
-         
-          switch(step){
+        switch(step){
                     case 1:
                               return (
                               <Step1 
@@ -111,10 +95,12 @@ function MultipleForms(){
 }
 
 function Step1(props){
-          function continu(e){
+          
+    function nextHandler(e){
                     e.preventDefault();
                     props.nextStep();
           }
+
           const {value1,handleChange}=props;
           
           return(
@@ -122,7 +108,7 @@ function Step1(props){
                               <input defaultValue={value1.name} id="appoiName"  onChange={(e)=>{handleChange('name',e)}}/>
                               <input defaultValue={value1.pNo} id="appoiPno"  onChange={(e)=>{handleChange('pNo',e)}}/>
                               <input defaultValue={value1.location} id="appoiLocation"  onChange={(e)=>{handleChange('location',e)}}/>
-                              <input type="button" value="Next" onClick={continu}/>
+                              <input type="button" value="Next" onClick={nextHandler}/>
                              
                     </div>
           )
@@ -130,12 +116,12 @@ function Step1(props){
 }
 
 function Step2(props){
-          function continu(e){
+          function nextHandler(e){
                     e.preventDefault();
                     props.nextStep();
           }
 
-          function contin(e){
+          function prevHandler(e){
                     e.preventDefault();
                     props.prevStep();
 
@@ -147,8 +133,8 @@ function Step2(props){
                             <input defaultValue={value1.history} id="appoiHistory"  onChange={(e)=>{handleChange('history',e)}}/>  
                             <input defaultValue={value1.problem} id="appoiProblem"  onChange={(e)=>{handleChange('problem',e)}}/>  
 
-                              <input type="button" value="Next" onClick={continu}/>
-                              <input type="button" value="Prev" onClick={contin}/>
+                              <input type="button" value="Next" onClick={nextHandler}/>
+                              <input type="button" value="Prev" onClick={prevHandler}/>
 
                     </div>
           )
@@ -158,12 +144,12 @@ function Step2(props){
 function Step3(props){
     //backend must have gone here
     
-    function continu(e){
+    function nextHandler(e){
         e.preventDefault();
         props.nextStep();
 }
 
-function contin(e){
+function prevHandler(e){
         e.preventDefault();
         props.prevStep();
 
@@ -171,7 +157,7 @@ function contin(e){
     var value1= {...props.value1}
           return(
                     <div>
-                              <ul>
+                              <ul id="toConfirm">
                                   <li key="1">{value1.name}</li><br/>
                                   <li key="2">{value1.pNo}</li><br/>
                                   <li key="3">{value1.location}</li><br/>
@@ -179,8 +165,8 @@ function contin(e){
                                   <li key="5">{value1.problem}</li><br/>
 
                               </ul>
-                              <input type="button" value="Confirm" onClick={continu}/>
-                              <input type="button" value="Prev" onClick={contin}/>
+                              <input type="button" value="Confirm" onClick={nextHandler}/>
+                              <input type="button" value="Prev" onClick={prevHandler}/>
                     </div>
           )
 
@@ -190,7 +176,7 @@ function Step4(props){
     
 
           return(
-                    <div>
+                    <div id="success">
                             <h1>Thank You for your submission</h1>
                             <p>Will email you shortly!</p>
                     </div>

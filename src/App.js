@@ -15,7 +15,6 @@ function App() {
       <Carousel/>
       <Boxes/>
      <Appointment/>
-      
       <Handlers/>
       <Footer/>
     </div>
