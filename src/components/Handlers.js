@@ -7,14 +7,15 @@ return(
                     
                               <div id="facebook">
 
-                              <div class="fb-page" data-href="https://www.facebook.com/storiesafter12" data-tabs="timeline" data-width="300" data-height="400" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/storiesafter12" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/storiesafter12">Stories After 12</a></blockquote></div>
+                              <div className="fb-page" data-href="https://www.facebook.com/storiesafter12" data-tabs="timeline" data-width="300" data-height="400" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/storiesafter12" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/storiesafter12">Stories After 12</a></blockquote></div>
                               </div>
 
                               <div id="news">
                               
                                         <News/>
-                              
+                              <a href="#/" target="_blank" rel="noopener noreferrer" id="seeMore">See More</a>
                               </div>
+
 
                     
           </div>

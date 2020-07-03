@@ -34,7 +34,7 @@ function Box(){
           return(
                     hospitalData.map((data,index)=>{
                               return(
-                              <div className="box">
+                              <div className="box" key={index}>
                                         Name : <label id="name">{data.name}</label><br/>
                                         Location : <label id="location">{data.location}</label><br/>
                                         Speciality : <label id="speciality">{data.speciality}</label><br/>
