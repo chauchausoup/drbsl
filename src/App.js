@@ -1,21 +1,15 @@
 import React from 'react';
 import './App.css';
 import NavBar from './components/NavigationBar'
-import Carousel from './components/Carousel';
-import Boxes from './components/Boxes';
-import Appointment from './components/AppoiCalendar'
-import Handlers from './components/Handlers';
 import Footer from './components/Footer'
+import Middle from './components/Middle'
 
 
 function App() {
   return (
     <div >
       <NavBar/>
-      <Carousel/>
-      <Boxes/>
-     <Appointment/>
-      <Handlers/>
+      <Middle/>
       <Footer/>
     </div>
   );
