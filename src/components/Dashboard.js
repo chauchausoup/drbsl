@@ -1,8 +1,8 @@
 import React from 'react';
-import DashboardLocation from './DashboardLocation';
-import DashboardNews from './DashboardNews';
-import DashboardHospital from './DashboardHospital';
-import DashboardWeekDays from './DashboardWeekDays';
+import DashboardLocation from './Dashboard/DashboardLocation';
+import DashboardNews from './Dashboard/DashboardNews';
+import DashboardHospital from './Dashboard/DashboardHospital';
+import DashboardWeekDays from './Dashboard/DashboardWeekDays';
 
 import { BrowserRouter as Router,Switch,Route,Link } from 'react-router-dom';
 
