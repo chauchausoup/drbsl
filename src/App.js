@@ -3,7 +3,7 @@ import './App.css';
 import NavBar from './components/NavigationBar'
 import Footer from './components/Footer'
 import Middle from './components/Middle'
-import { BrowserRouter as Router,Switch,Route } from 'react-router-dom';
+import { BrowserRouter as Router,Switch,Route } from 'react-router-dom';  
 import Login from './components/Login';
 import News from './components/News'
 import Dashboard from './components/Dashboard';
