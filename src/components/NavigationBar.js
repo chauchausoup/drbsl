@@ -1,5 +1,7 @@
 import React,{useState} from 'react';
 import '../styles/Navbar.scss';
+import {Link} from 'react-router-dom';
+
 
 export default function NavigationBar(){
 
@@ -13,9 +15,9 @@ export default function NavigationBar(){
                     <div>
                               <nav className="Nav">
                                         <div className="head">
-                                                  <h1 id="headline">drbuddhisagarlamichhane.com</h1>
+                                                  <Link to = "/"><h1 id="headline">drbuddhisagarlamichhane.com</h1></Link>
                                                   <div id="btn" onClick={handleClick}>
-                                                            -
+                                                            |||
                                                   </div>
                                         </div>
                                         <div className= {isOpen?"drop":"ceil"}> 
@@ -27,8 +29,8 @@ export default function NavigationBar(){
                                                   
                                                   </ul>
                                                   <ul id="routes">
-                                                            <li onClick={handleClick}>News</li>
-                                                            <li onClick={handleClick}>Login</li>
+                                                            <li onClick={handleClick}><Link to="/news"> News</Link></li>
+                                                            <li onClick={handleClick}><Link to="/login">Login</Link></li>
                                                   </ul>
                                                   <ul id="socials2">
                                                             <li><a href="/#">Email</a></li>

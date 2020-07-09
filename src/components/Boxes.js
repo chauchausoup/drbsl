@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Boxes.scss'
+import hospitalData from '../data/hospitals';
 
 function Boxes(){
 return(
@@ -15,21 +16,7 @@ return(
 )
 }
 
-const hospitalData=[{
-                              name:"Gandaki",
-                              location:"Hospital Chowk",
-                              speciality:"General Physician",
-                              from:"2016",
-                              to:"Now"
-                    },
-                    {
-                              name:"Sisuwa",
-                              location:"Milan Chowk",
-                              speciality:"General Physician",
-                              from:"2012",
-                              to:"2015"
-                    }
-                    ]
+
 function Box(){
           return(
                     hospitalData.map((data,index)=>{

@@ -1,5 +1,8 @@
 import React from 'react';
 import '../styles/Handlers.scss'
+import {Link} from 'react-router-dom';
+import newsDate from '../data/news';
+
 
 function AppoiCalendar(){
 return(
@@ -13,7 +16,7 @@ return(
                               <div id="news">
                               
                                         <News/>
-                              <a href="#/" target="_blank" rel="noopener noreferrer" id="seeMore">See More</a>
+                              <Link to ="/news" id="seeMore">See More</Link>
                               </div>
 
 
@@ -21,19 +24,6 @@ return(
           </div>
 )
 }
-const newsDate=[
-                    {
-                              title:"Paracetamol to the rescue",
-                              content:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-                              date:"2020-02-22"
-                    },
-                    {
-                              title:"Covid Mania",
-                              content:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-                              date:"1990-03-22"
-                              
-                    }
-          ]
           
 function News(){
           return(
