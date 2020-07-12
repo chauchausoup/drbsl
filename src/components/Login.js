@@ -1,8 +1,53 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {Link} from 'react-router-dom';
 
 
+
+const axios = require('axios');
+
+
+
+
 function Login(){
+      const [info,setInfo]= useState({
+            email:"",
+            password:""
+      })
+
+      function handleInputChange(e){
+            setInfo({
+                  ...info,
+                  [e.target.name]:e.target.value
+                  
+            })
+            console.log(info)
+
+      }
+
+      function handleSubmit(e){
+            e.preventDefault();
+            console.log("hey");
+            console.log(info)
+
+            let  params = {
+                  email:info.email,
+                  password:info.password
+            };
+
+            axios
+                  .post('http://localhost:5000/admin/',params)
+                  .then(()=>console.log("user created"),
+                  
+                  )
+                  .catch(err=>{
+                        console.log(err)
+                  });
+
+
+      };
+
+
+
 return(
           <div className="login">
                   <h3>
@@ -11,10 +56,10 @@ return(
                   <p>
                         hello user
                   </p>
-                  <form>
-                        <input type="text" name="email" id="login_email"/>
-                        <input type="password" name="password" id="login_password"/>
-                        <button type="submit"><Link to ="/admin">Login</Link></button>
+                  <form onSubmit={handleSubmit}>
+                        <input type="text" name="email" id="login_email" onChange={handleInputChange}/>
+                        <input type="password" name="password" id="login_password" onChange={handleInputChange}/>
+                        <button type="submit">Login</button>
                   </form>
 
           </div>
